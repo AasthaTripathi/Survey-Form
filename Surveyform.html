@@ -1,0 +1,120 @@
+<head>
+  <title> Survey Form </title>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/Surveyform2.css"/>
+</head>
+<body>
+  <nav>
+    <div class="nav-builder">
+    </div>
+    <div class="nav-builder">
+    </div>
+    <div class="nav-builder">
+    </div>
+  </nav>
+  <header>
+    <h1 id="title">My survey</h1>
+  </header>
+  <section class="wrapper">
+    <p id="description">Please let us know your thoughts<p>
+    <form id="survey-form">
+    <div class="rowTab">  
+      <div class="labels">
+        <label for="name" id="name-label">* Name:</label>
+      </div> 
+      <div class="rightTab">
+        <input class="input-field" type="text" name="name" placeholder="Enter your name" id="name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="email" id="email-label">* Email:</label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+     </div>
+     <div class="rowTab">
+       <div class="labels">
+        <label for="age" id="number-label">* Age:</label>
+       </div>
+       <div class="rightTab">
+        <input id="number" type="number" class="input-field" required placeholder="Age" min="0" max="100">
+       </div>
+     <div class="rowTab">
+       <div class="labels">
+        <label for="role">Which option best describes your current role?</label>
+       </div>
+       <div class="rightTab">  
+          <select id="dropdown">
+          <option disable selected value>Select</option>
+          <option value="Computer Software Engineer">Computer Software Engineer</option>
+          <option value="Electrical Engineer">Electrical Engineer</option>
+          <option value="Civil Engineer">Civil Engineer</option>
+          <option value="Mechanical Engineer">Mechanical Engineer</option>
+          </select>
+       </div>
+     </div>   
+    <div class="rowTab">
+      <div class="labels">
+        <label>* How likely is it that you would recommend us to a friend?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style-type: none">
+          <li class="radio"><label>Definitely<input type="radio" id="recommend-definitely" name="recommend" value="1" class="recommend">             </label></li>
+          <li class="radio"><label>Maybe<input type="radio" id="recommend-maybe" name="recommend" value="2" class="recommend"></label>               </li>
+          <li class="radio"><label>Not Sure<input type="radio" id="recommend-not-sure" name="recommend" value="3" class="recommend">                 </label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label>Which option do you like the best for future?</label>
+      </div>
+      <div class="rightTab">
+        <select class="dropdown">
+        <option disable selected value>Select</option>
+        <option value="Block Chain">Block Chain</option>
+        <option value="5G Robot">5G Robot</option>
+        <option value="Augmented Identity">Augmented Identity</option>
+        <option value="Artificial general intelligence">Artificial general intelligence</option>
+        </select>
+      </div>
+   </div>
+   <div class="rowTab">
+     <div class="labels">
+       <label>Things worth changing for world:</label> 
+     </div>
+     <div class="rightTab">
+       <ul>
+        <li class="checkbox"><label><input type="checkbox" id="The shortage of jobs" name="interest" value="1">
+        The shortage of jobs</label></li>
+        <li class="checkbox"><label><input type="checkbox" id="Underfunded green technologies" name="interest" value="2">
+        Underfunded green technologies</label></li>
+        <li class="checkbox"><label><input type="checkbox" id="Time and gravity" name="interest" value="3">     
+        Time and gravity</label></li>
+        <li class="checkbox"><label><input type="checkbox" id="The traditional career mentality" name="interest" value="4">
+        The traditional career mentality</label></li>
+        <li class="checkbox"><label><input type="checkbox" id=" Concealed information" name="interest" value="5">
+        Concealed information</label></li>
+        <li class="checkbox"><label><input type="checkbox" id="Limited access to electricity" name="interest" value="6">
+        Limited access to electricity</label>
+        <li class="checkbox"><label><input type="checkbox" id="Public education" name="interest" value="7">
+        Public education</label>
+        <li class="checkbox"><label><input type="checkbox" id="Spam and computer viruses" name="interest" value="8">
+        Spam and computer viruses</label>
+       </ul>
+     </div>
+  <div class="rowTab">
+    <div class="labels">
+      <label>Any Comments or Suggestions?</label>
+    </div>
+    <div class="rightTab">
+      <textarea rows="4" cols="30" placeholder="Enter your comment here..."></textarea>
+    </div>
+  </div>
+  <input class="button-submit" type="submit" value="Submit" id="submit">
+  </form>
+  </section>
+ 
+</body>
